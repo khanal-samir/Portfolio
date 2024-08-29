@@ -1,13 +1,14 @@
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaGithubSquare, } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
 
 const ProjectsCard = ({ url, img, github, title, text }) => {
   return (
-    <article className='bg-white rounded-lg shadow-md hover:shadow-xl duration-300'>
+  <a href={url}>
+    <article className='bg-white rounded-lg shadow-md hover:shadow-xl duration-300 transition-transform hover:scale-105'>
       <img
         src={img}
         alt={title}
-        className='w-full object-cover rounded-t-lg h-64'
+        className='w-full object-cover rounded-t-lg h-fit'
       />
       <div className='capitalize p-8'>
         <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
@@ -22,6 +23,7 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
         </div>
       </div>
     </article>
+  </a>  
   );
 };
 export default ProjectsCard;
