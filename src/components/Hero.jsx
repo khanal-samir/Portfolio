@@ -1,4 +1,4 @@
-import Photo1 from '../assets/Photos/Photo1.jpeg';
+import heroImg from '../assets/Photos/hero.svg';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 const Hero = () => {
@@ -10,13 +10,13 @@ const Hero = () => {
             I'm Samir Khanal
           </h1>
           <p className='mt-4 text-2xl md:text-4xl text-slate-600 capitalize tracking-wide'>
-            Front-End Developer
+          Full Stack Developer
           </p>
           <p className='mt-2 text-lg md:text-xl text-slate-600 capitalize tracking-wide'>
             Turning ideas into interactive reality
           </p>
           <div className='flex gap-x-6 mt-6'>
-            <a    href='https://github.com/Samir-codes-123' aria-label='GitHub'>
+            <a    href='https://github.com/khanal-samir' aria-label='GitHub'>
               <FaGithubSquare className='h-8 w-8 text-slate-600 hover:text-gray-900 transition-colors duration-300' />
             </a>
             <a   href='https://www.linkedin.com/in/samir-khanal-713b68281/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' aria-label='LinkedIn'>
@@ -28,11 +28,7 @@ const Hero = () => {
           </div>
         </article>
         <article className='hidden md:block'>
-          <img
-            src={Photo1}
-            alt="Samir Khanal"
-            className='h-80 md:h-[32rem] lg:h-[36rem] mx-auto rounded-lg shadow-xl transition-transform transform hover:scale-90'
-          />
+          <img src={heroImg} className='h-80 lg:h-96' />
         </article>
       </div>
     </div>
