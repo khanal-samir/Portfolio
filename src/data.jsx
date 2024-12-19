@@ -1,7 +1,9 @@
 import { nanoid } from 'nanoid';
 import {  FaJs,FaNodeJs  } from 'react-icons/fa';
 import { SiTailwindcss,SiReact,SiHtml5,SiMongodb} from 'react-icons/si';
-
+import ecomerce from './assets/Photos/ecomerce.png';
+import samchat from "./assets/Photos/samchat.png";
+import twiite from "./assets/Photos/twiite.png";
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -54,7 +56,14 @@ export const skills = [
 export const projects = [
   {
     id: nanoid(),
-    img: 'https://i.pinimg.com/originals/09/e2/cd/09e2cd8d3a83b6e9cd4dc5d0d703a575.png',
+    img:twiite, 
+    url: 'https://social-media-ochre-delta.vercel.app/',
+    github: 'https://github.com/khanal-samir/Social-Media',
+    title: 'Social media application',
+    text: 'I developed a social media application inspired by Twitter, enabling users to create and share posts, upload and display photos, and engage with others through likes and comments, fostering dynamic interaction. The platform features secure login and registration using JWT authentication, ensuring robust user data protection. Designed with a responsive layout, it delivers an intuitive and engaging user experience across all devices, making it easy for users to connect and share their moments.'},
+  {
+    id: nanoid(),
+    img: samchat,
     url: 'https://samchat-react.vercel.app/',
     github: 'https://github.com/khanal-samir/ChatApp',
     title: 'Samchat',
@@ -62,7 +71,7 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: 'https://cdn-icons-png.freepik.com/512/6430/6430292.png',
+    img:  ecomerce ,
     url: 'https://eccomerce-react-shadcn.vercel.app/',
     github: 'https://github.com/khanal-samir/Eccomerce-React-Shadcn',
     title: 'Clothing Ecommerce',
